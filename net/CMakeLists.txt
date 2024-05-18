@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.25)
+
+set(CMAKE_CXX_STANDARD 20)
+
+project(net)
+
+AUX_SOURCE_DIRECTORY(. NET_SRC)
+
+ADD_LIBRARY(net ${NET_SRC})
+
+TARGET_LINK_LIBRARIES(net)
